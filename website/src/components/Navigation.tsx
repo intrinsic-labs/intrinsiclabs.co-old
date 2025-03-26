@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { useTheme } from './providers/ThemeProvider';
-
+import Image from 'next/image';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,7 +65,7 @@ const Navigation = () => {
   ];
 
   // Apply different background styles based on isDarkTheme
-  const headerClass = isDarkTheme 
+  const headerClass = isDarkTheme
     ? `fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-ls-background py-4 text-white`
     : `fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background py-4`;
 
@@ -98,9 +98,15 @@ const Navigation = () => {
                   animate={{ opacity: 1, position: "relative" }}
                   exit={{ opacity: 0, position: "absolute" }}
                   transition={{ duration: 0.2 }}
-                  className="block"
+                  className="flex items-center"
                 >
-                  IL
+                  <Image
+                    src={isDarkTheme ? "/images/logo/new/nav_collapsed_white.svg" : "/images/logo/new/nav_collapsed_black.svg"}
+                    alt="Intrinsic Labs Logo"
+                    width={56}
+                    height={30}
+                    className="mr-2"
+                  />
                 </motion.span>
               ) : (
                 <motion.span
@@ -109,9 +115,15 @@ const Navigation = () => {
                   animate={{ opacity: 1, position: "relative" }}
                   exit={{ opacity: 0, position: "absolute" }}
                   transition={{ duration: 0.2 }}
-                  className="block"
+                  className="flex items-center"
                 >
-                  Intrinsic Labs
+                  <Image
+                    src={isDarkTheme ? "/images/logo/new/nav_white.svg" : "/images/logo/new/nav_black.svg"}
+                    alt="Intrinsic Labs Logo"
+                    width={200}
+                    height={30}
+                    className="mr-2"
+                  />
                 </motion.span>
               )}
             </AnimatePresence>
@@ -168,7 +180,7 @@ const Navigation = () => {
             )}
           </svg>
         </button>
-      </div> 
+      </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -186,8 +198,8 @@ const Navigation = () => {
                   <div key={link.name} className="group">
                     <Link
                       href={link.href}
-                      className={isDarkTheme 
-                        ? "text-3xl font-light hover:text-accent hover:font-medium transition-colors duration-300 py-4 pl-4 block text-white" 
+                      className={isDarkTheme
+                        ? "text-3xl font-light hover:text-accent hover:font-medium transition-colors duration-300 py-4 pl-4 block text-white"
                         : "text-3xl font-light hover:text-accent hover:font-medium transition-colors duration-300 py-4 pl-4 block"
                       }
                       onClick={() => setIsMobileMenuOpen(false)}
@@ -200,7 +212,7 @@ const Navigation = () => {
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-auto pt-8">
                 <div className="flex justify-center space-x-6 py-8">
                   {socialLinks.map((social) => (

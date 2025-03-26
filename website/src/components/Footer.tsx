@@ -40,15 +40,15 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <Image 
-              src="/images/logo/intrinsic-labs-logo-v2-accent-dark.svg" 
+              src="/images/logo/new/horizontal_white.svg" 
               alt="Intrinsic Labs Logo" 
-              width={80}
+              width={196}
               height={80}
-              className=""
+              className="mb-6"
             />
-            <div className="logo-text text-2xl my-4 text-secondary">
+            {/* <div className="logo-text text-2xl my-4 text-secondary">
               Intrinsic Labs
-            </div>
+            </div> */}
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
                 <a

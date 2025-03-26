@@ -109,9 +109,10 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-jetbrains-mono)", "JetBrains Mono Variable", "monospace"], // Keeping monospace for body text
         mono: ["var(--font-jetbrains-mono)", "JetBrains Mono Variable", "JetBrains Mono", "Menlo", "Monaco", "Consolas", "monospace"],
-        display: ["Times New Roman", "serif"], // Times New Roman for headings
+        display: ["Arial", "sans-serif"], // Times New Roman for headings
         cardo: ["Cardo", "serif"], // Cardo font
         "calling-code": ["Calling Code", "monospace"], // Calling Code font
+        arial: ["Arial", "sans-serif"], // Arial font
       },
       fontWeight: {
         thin: '100',
@@ -214,7 +215,6 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
   ],
 };
 export default config; 

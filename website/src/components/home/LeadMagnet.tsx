@@ -3,26 +3,25 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { FiMail, FiPhone } from 'react-icons/fi';
 
-const CallToAction = () => {
+const LeadMagnet = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   return (
-    <section ref={sectionRef} className="py-16 relative overflow-hidden parallax-section bg-background">
+    <section ref={sectionRef} className="pb-20 md:py-32 relative overflow-hidden bg-primary">
 
       <motion.div
         className="container-custom relative z-10 parallax-content"
       >
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center text-white">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="heading-sm mb-6"
+            className="heading-lg mb-6 pt-16 md:pt-0"
           >
-            Stop wishing. Start building.
+            Analyze your business for free in 3 minutes.
           </motion.h2>
 
           <motion.p
@@ -30,9 +29,9 @@ const CallToAction = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-neutral-800 max-w-3xl mb-6 mx-auto"
+            className="text-lg text-white mb-10 max-w-3xl mx-auto"
           >
-            Reach out by phone or email to make your wildest dreams come true.
+            We'll send you a report with actionable insights to help you grow your business.
           </motion.p>
 
           <motion.div
@@ -40,26 +39,15 @@ const CallToAction = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-row flex-wrap gap-4 items-center justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
               href="https://x.com/intrinsic_labs"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary text-center flex flex-row gap-2 items-center">
-              <FiPhone size={20} />
-              Call us
+              className="btn-primary w-full block text-center max-w-xl mx-auto">
+              Get your report
             </Link>
-
-            <Link
-              href="https://x.com/intrinsic_labs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-center flex flex-row gap-2 items-center">
-              <FiMail size={20} />
-              Email us
-            </Link>
-
           </motion.div>
         </div>
       </motion.div>
@@ -67,4 +55,4 @@ const CallToAction = () => {
   );
 };
 
-export default CallToAction; 
+export default LeadMagnet; 

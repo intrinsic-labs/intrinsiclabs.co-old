@@ -53,7 +53,7 @@ const Hero = () => {
       <motion.div 
         className="container-custom relative z-10 pt-8 pb-16 md:py-16"
       >
-        <div className="max-w-4xl mx-auto text-center" ref={textRef}>
+        <div className="max-w-xl mx-auto text-center" ref={textRef}>
 
           <motion.div 
             custom={1}
@@ -63,11 +63,11 @@ const Hero = () => {
             className="flex justify-center items-center pb-8"
           >
             <Image 
-              src="/images/logo/intrinsic-labs-logo-v2-accent-lighter.svg" 
+              src="/images/logo/new/vertical_accent.svg" 
               alt="Intrinsic Labs Logo" 
               width={300}
               height={300}
-              className="w-[250px] h-[250px] md:w-[400px] md:h-[400px]"
+              className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
             />
           </motion.div>
 
@@ -76,34 +76,10 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="heading-xl mb-6 tracking-tight"
+            className="heading-md mb-12 tracking-tight"
           >
-            Imagine anything.
+            Let's grow your <span className="text-accent">revenue</span> with top notch apps and websites.
           </motion.h1>
-
-          <motion.p
-            custom={2}
-            initial="hidden"
-            animate="visible"
-            variants={textVariants}
-            className="text-xl md:text-2xl text-neutral-800 mb-4 md:mb-12 max-w-3xl mx-auto"
-          >
-            We'll make it so.
-          </motion.p>
-
-          {/* <motion.div
-            custom={3}
-            initial="hidden"
-            animate="visible"
-            variants={textVariants}
-            className="gap-4 justify-center"
-          >
-            <Link href="/work" className="btn-primary">
-              View Our Work
-            </Link>
-          </motion.div> */}
-
-          {/* <div className="h-16 flex-shrink-0" /> */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

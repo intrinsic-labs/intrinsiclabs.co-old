@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Spinners Studio",
+    "description": "A modern web application for creating and sharing animated spinners and loaders, built with React and Three.js.",
+    "tags": ["React", "Three.js", "Animation"],
+    "image": "/images/work/spinners-studio.gif",
+    "year": "2023",
+    "client": "Spinners Inc.",
+    "link": "https://example.com/spinners"
+  },
+  {
+    "id": 2,
+    "title": "Meaning of Life",
+    "description": "An interactive philosophical exploration platform that uses AI to help users discover meaning in everyday experiences.",
+    "tags": ["AI", "Interactive", "Philosophy"],
+    "image": "/images/work/meaning-of-life.gif",
+    "year": "2023",
+    "client": "Philosophical Institute",
+    "link": "https://example.com/meaning"
+  },
+  {
+    "id": 3,
+    "title": "CR Analytics",
+    "description": "Custom reporting and analytics dashboard with real-time data visualization for enterprise clients.",
+    "tags": ["Dashboard", "Analytics", "D3.js"],
+    "image": "/images/work/cr1.png",
+    "year": "2022",
+    "client": "CR Enterprises",
+    "link": "https://example.com/cr-analytics"
+  },
+  {
+    "id": 4,
+    "title": "CR Mobile Platform",
+    "description": "Cross-platform mobile application enabling field workers to collect and synchronize data in real-time.",
+    "tags": ["React Native", "Mobile", "Offline-First"],
+    "image": "/images/work/cr2.png",
+    "year": "2022",
+    "client": "CR Enterprises",
+    "link": "https://example.com/cr-mobile"
+  },
+  {
+    "id": 5,
+    "title": "Blackthorn Finance",
+    "description": "Secure and intuitive financial management platform with advanced encryption and real-time transaction processing.",
+    "tags": ["FinTech", "Security", "React"],
+    "image": "/images/work/blackthorn.png",
+    "year": "2021",
+    "client": "Blackthorn Technologies",
+    "link": "https://example.com/blackthorn"
+  },
+  {
+    "id": 6,
+    "title": "Anselm Art Gallery",
+    "description": "Digital art marketplace allowing artists to showcase and sell their work as traditional pieces or NFTs.",
+    "tags": ["Next.js", "Blockchain", "E-commerce"],
+    "image": "/images/work/anselm.png",
+    "year": "2021",
+    "client": "Anselm Arts Collective",
+    "link": "https://example.com/anselm"
+  }
+] 
