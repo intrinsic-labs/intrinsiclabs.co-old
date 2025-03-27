@@ -26,7 +26,7 @@ const reviews = [
   },
   {
     id: 4,
-    quote: "Intrinsic Labs has been an amazing company to work with! I wanted a logo for my mowing business, and they made just what I was looking for... the final product was delivered in a very professional and timely manner... I highly recommend Intrinsic Labs!",
+    quote: "Intrinsic Labs has been an amazing company to work with! The final product was delivered in a very professional and timely manner... I highly recommend Intrinsic Labs!",
     credit: "Elliot George, Mint Hill Mowing Co",
     stars: 5,
   },
@@ -100,8 +100,8 @@ const Reviews = () => {
               >
                 <div 
                   className={`
-                    bg-neutral-white/50 hover:bg-white/75 backdrop-blur-sm 
-                    border border-neutral-400 hover:border-accent/50
+                    bg-white/40 hover:bg-white/80 backdrop-blur-sm 
+                    border border-primary/20 hover:border-accent/60
                     rounded-lg p-6
                     transition-all duration-300
                     relative z-10

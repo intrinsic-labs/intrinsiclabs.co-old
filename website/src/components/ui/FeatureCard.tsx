@@ -35,7 +35,7 @@ const FeatureCard: FC<FeatureCardProps> = ({
   return (
     <motion.div
       variants={variants}
-      className={`bg-background/50 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-accent transition-all duration-300 ${isHovered ? 'border-accent' : ''} ${className} ${onClick ? 'cursor-pointer' : ''}`}
+      className={`bg-white/40 hover:bg-white/80 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-accent/60 transition-all duration-300 ${isHovered ? 'border-accent' : ''} ${className} ${onClick ? 'cursor-pointer' : ''}`}
       onClick={onClick}
       whileHover={{ 
         y: onClick ? -3 : 0,
@@ -70,14 +70,14 @@ const FeatureCard: FC<FeatureCardProps> = ({
       
       {/* First paragraph (could be a subtitle) */}
       {firstParagraph && (
-        <p className="text-sm text-neutral-800 mb- font-light">
+        <p className="text-md text-neutral-800">
           {firstParagraph}
         </p>
       )}
       
       {/* Remaining paragraphs */}
       {remainingParagraphs.length > 0 && remainingParagraphs.map((paragraph, index) => (
-        <p key={index} className="text-neutral-800 text-sm mb-3 font-light">
+        <p key={index} className="text-neutral-800 text-sm mb-3">
           {paragraph}
         </p>
       ))}

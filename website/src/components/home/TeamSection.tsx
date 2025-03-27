@@ -87,7 +87,7 @@ const TeamSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white/50 hover:bg-white/75 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/20 hover:border-accent/50 flex flex-col"
+                  className="bg-white/40 hover:bg-white/80 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/20 hover:border-accent/60 flex flex-col transition-all duration-300"
                 >
                   <div className="relative aspect-[1] overflow-hidden">
                     <Image
