@@ -30,7 +30,7 @@ const PortfolioSection = () => {
           </motion.div>
 
           {/* Portfolio Gallery. No friken idea why I need this negative margin lol */}
-          <div className="-mx-6 md:-mx-4">
+          <div className="-mx-5 md:-mx-4">
             <PortfolioGallery />
           </div>
         </div>

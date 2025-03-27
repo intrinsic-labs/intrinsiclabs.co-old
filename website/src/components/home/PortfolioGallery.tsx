@@ -50,7 +50,7 @@ const PortfolioGallery = () => {
       className="container-custom"
     >
       <div 
-        className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2 auto-rows-4"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-2 auto-rows-4"
         style={{
           gridAutoFlow: 'dense',
         }}
@@ -151,6 +151,7 @@ const PortfolioGallery = () => {
                         <div className="w-3 h-3 rounded-full bg-green-500 opacity-80"></div>
                       </div>
                     </div>
+                    
                     <div className="p-6 flex flex-col space-y-4 justify-left items-left flex-grow overflow-y-auto overscroll-behavior-y-contain">
                       <h3 className="heading-sm text-left">{item.title}</h3>
                       <p className="text-sm text-left">{item.description}</p>
