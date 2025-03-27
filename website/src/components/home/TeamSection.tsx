@@ -54,27 +54,28 @@ const TeamSection = () => {
     <section 
       id="team"
       ref={sectionRef}
-      className="bg-background relative overflow-hidden py-16 md:py-24"
+      className="bg-background relative overflow-hidden py-8"
     >
       <div className="container-custom relative z-10">
         <motion.div 
-          className="max-w-4xl mx-auto mb-16 text-center"
+          className="max-w-4xl mx-auto mb-8 md:mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="heading-lg mb-6 font-display">Meet The Team</h2>
           
-          <p className="paragraph text-neutral-800 max-w-2xl mx-auto pb-4">
+          <p className="paragraph text-neutral-800 max-w-2xl mx-auto">
             Asher founded Intrinsic Labs with a vision for building a team of exceptional thinkers. Think you'd be a good fit? <Link className="underline" href="/contact">Reach out.</Link>
           </p>
         </motion.div>
 
+        {/* Team Carousel */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto p-6"
+          className="max-w-4xl mx-auto px-6"
         >
           {/* Team carousel */}
           <div className="relative">
@@ -88,7 +89,7 @@ const TeamSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-white/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-md border border-primary/10 flex flex-col"
                 >
-                  <div className="relative aspect-[5/5] overflow-hidden">
+                  <div className="relative aspect-[1] overflow-hidden">
                     <Image
                       src={member.image || ''}
                       alt={member.name}
@@ -103,14 +104,6 @@ const TeamSection = () => {
                     <div className="flex flex-col mb-2">
                     <h3 className="text-xl font-display font-bold">{member.name}</h3>
                     <p className="text-sm text-neutral-700">{member.role}</p>
-                      {/* {member.skills.slice(0, 2).map((skill, i) => (
-                        <span 
-                          key={i} 
-                          className="text-xs px-2 py-1 rounded-sm bg-primary/10 text-primary/80"
-                        >
-                          {skill}
-                        </span>
-                      ))} */}
                     </div>
                   </div>
                 </motion.div>

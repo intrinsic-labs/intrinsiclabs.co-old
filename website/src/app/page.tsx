@@ -1,5 +1,5 @@
 import Hero from '@/components/home/Hero';
-import TeamSection from '@/components/about/TeamSection';
+import TeamSection from '@/components/home/TeamSection';
 import ValuesSection from '@/components/about/ValuesSection';
 import CallToAction from '@/components/home/CallToAction';
 import LeadMagnet from '@/components/home/LeadMagnet';

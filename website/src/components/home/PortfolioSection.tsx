@@ -17,7 +17,7 @@ const PortfolioSection = () => {
       >
         <div className="container-custom relative z-10 pb-8">
           <motion.div
-            className="max-w-4xl mx-auto mb-16 text-center"
+            className="max-w-4xl mx-auto mb-8 md:mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}

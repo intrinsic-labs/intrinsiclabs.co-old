@@ -9,7 +9,7 @@ const CallToAction = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   return (
-    <section ref={sectionRef} className="py-16 relative overflow-hidden parallax-section bg-background">
+    <section ref={sectionRef} className="pt-8 md:pt-16 pb-8 md:pb-16 relative overflow-hidden parallax-section bg-background">
 
       <motion.div
         className="container-custom relative z-10 parallax-content"
