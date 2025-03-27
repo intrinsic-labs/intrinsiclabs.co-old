@@ -4,6 +4,7 @@ import ValuesSection from '@/components/about/ValuesSection';
 import CallToAction from '@/components/home/CallToAction';
 import LeadMagnet from '@/components/home/LeadMagnet';
 import PortfolioSection from '@/components/home/PortfolioSection';
+import Reviews from '@/components/home/Reviews';
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
       <LeadMagnet />
       <PortfolioSection />
       <TeamSection />
-      <CallToAction />
+      <Reviews />
     </main>
   );
 }

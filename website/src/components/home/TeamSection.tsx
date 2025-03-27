@@ -24,7 +24,7 @@ const teamMembers = [
     bio: 'Experienced sales professional with a background in client relations. Helps clients identify their needs and ensures our solutions meet their expectations.',
     skills: ['Client Relations', 'Sales Strategy', 'Project Management', 'Business Development'],
     imagePlaceholder: 'Elaine Pope',
-    image: '/images/team/elaine.jpeg',
+    image: '/images/logo/new/planet_black_padding.svg',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const teamMembers = [
     bio: 'Sales professional with a drive for growth and innovation. Focused on expanding our client base and identifying new opportunities for the company.',
     skills: ['Business Strategy', 'Client Acquisition', 'Market Research', 'Sales'],
     imagePlaceholder: 'Quinten Harris',
-    image: '/images/team/quinten.jpeg',
+    image: '/images/logo/new/planet_black_padding.svg',
   },
 ];
 
@@ -75,19 +75,19 @@ const TeamSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto px-6"
+          className="max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto"
         >
           {/* Team carousel */}
           <div className="relative">
             {/* Team members */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={member.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-md border border-primary/10 flex flex-col"
+                  className="bg-white/50 hover:bg-white/75 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/20 hover:border-accent/50 flex flex-col"
                 >
                   <div className="relative aspect-[1] overflow-hidden">
                     <Image
@@ -100,7 +100,7 @@ const TeamSection = () => {
                     />
                   </div>
                   
-                  <div className="py-3 px-4">
+                  <div className="py-2 md:py-3 px-3 md:px-4">
                     <div className="flex flex-col mb-2">
                     <h3 className="text-xl font-display font-bold">{member.name}</h3>
                     <p className="text-sm text-neutral-700">{member.role}</p>
