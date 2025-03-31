@@ -20,7 +20,7 @@ const teamMembers = [
   {
     id: 2,
     name: 'Elaine Pope',
-    role: 'Sales & Client Relations',
+    role: 'Client Relations',
     bio: 'Experienced sales professional with a background in client relations. Helps clients identify their needs and ensures our solutions meet their expectations.',
     skills: ['Client Relations', 'Sales Strategy', 'Project Management', 'Business Development'],
     imagePlaceholder: 'Elaine Pope',
@@ -33,6 +33,15 @@ const teamMembers = [
     bio: 'Sales professional with a drive for growth and innovation. Focused on expanding our client base and identifying new opportunities for the company.',
     skills: ['Business Strategy', 'Client Acquisition', 'Market Research', 'Sales'],
     imagePlaceholder: 'Quinten Harris',
+    image: '/images/logo/new/planet_black_padding.svg',
+  },
+  {
+    id: 4,
+    name: 'Lena Skov',
+    role: 'Marketing Advisor',
+    bio: 'Sales professional with a drive for growth and innovation. Focused on expanding our client base and identifying new opportunities for the company.',
+    skills: ['Business Strategy', 'Client Acquisition', 'Market Research', 'Sales'],
+    imagePlaceholder: 'Lena Skov',
     image: '/images/logo/new/planet_black_padding.svg',
   },
 ];
