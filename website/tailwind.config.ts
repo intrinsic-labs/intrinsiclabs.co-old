@@ -93,18 +93,6 @@ const config: Config = {
           900: "#1F130C",
           950: "#0F0906",
         },
-        // Latent Spaces specific colors
-        ls: {
-          background: "#121212",
-          text: "#FFFFFF",
-          textSecondary: "rgba(255, 255, 255, 0.8)",
-          accent: "rgb(77, 140, 86)",
-          accentLight: "rgb(108, 186, 120)",
-          yellow: "rgb(164, 145, 92)",
-          yellowLight: "rgb(201, 179, 116)",
-          surface: "rgba(255, 255, 255, 0.03)",
-          surfaceHover: "rgba(255, 255, 255, 0.08)",
-        },
       },
       fontFamily: {
         sans: ["var(--font-jetbrains-mono)", "JetBrains Mono Variable", "monospace"], // Keeping monospace for body text
@@ -214,7 +202,6 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
   ],
 };
 export default config; 

@@ -7,8 +7,8 @@ export default function ClientThemeBackground({ children }: { children: React.Re
   const { isDarkTheme } = useTheme();
   
   return (
-    <body className={`min-h-screen flex flex-col ${isDarkTheme ? 'bg-ls-background' : ''}`}>
+    <body className={`min-h-screen flex flex-col ${isDarkTheme ? 'bg-primary' : ''}`}>
       {children}
     </body>
   );
-} 
+}

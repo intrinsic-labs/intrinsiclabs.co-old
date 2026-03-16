@@ -1,0 +1,35 @@
+export const metadata = {
+  title: 'Building Native Mobile Apps with Swift and Kotlin',
+  excerpt: 'A practical guide to modern iOS and Android development with a performance-first mindset.',
+  date: '2026-02-01',
+  readingTime: '8 min read',
+  category: 'Mobile Development',
+  tags: ['Swift', 'Kotlin', 'SwiftUI', 'Jetpack Compose'],
+  coverImage: '/images/about/bluetooth-keyboard.jpeg',
+  featured: true,
+};
+
+# Native mobile still wins in key product moments
+
+When teams need deep platform integration, predictable performance, and fast access to new OS APIs, native remains the highest-leverage choice.
+
+## Practical architecture rules
+
+- Keep UI state local and explicit
+- Isolate network and persistence concerns
+- Treat analytics as infrastructure, not view logic
+
+```swift
+@MainActor
+final class FeedViewModel: ObservableObject {
+  @Published private(set) var items: [FeedItem] = []
+
+  func refresh() async throws {
+    items = try await repository.fetchLatest()
+  }
+}
+```
+
+## Shipping faster without cutting quality
+
+Use feature flags, strict test boundaries, and profile hot paths before launch. Most real regressions are not visual, they are data and lifecycle issues.

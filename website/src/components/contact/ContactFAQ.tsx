@@ -60,7 +60,7 @@ const ContactFAQ = () => {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-neutral-800 mb-8"
       >
-        Have questions about working with us? Here are answers to some common inquiries. If you can't find what you're looking for, just fill out the contact form above to get in touch.
+        Have questions about working with us? Here are answers to some common inquiries. If you can&apos;t find what you&apos;re looking for, just fill out the contact form above to get in touch.
       </motion.p>
       
       <div className="space-y-6">

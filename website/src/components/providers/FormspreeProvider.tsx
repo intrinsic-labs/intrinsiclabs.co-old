@@ -12,7 +12,9 @@ export function FormspreeProvider({ children }: FormspreeProviderProps) {
   
   // If no project ID is set, just render the children
   if (!projectId) {
-    console.warn('Formspree project ID not set. Form will not work.');
+    if (process.env.NODE_ENV === 'development' && typeof window !== 'undefined') {
+      console.warn('Formspree project ID not set. Form will not work.');
+    }
     return <>{children}</>;
   }
   

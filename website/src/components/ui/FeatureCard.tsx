@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
-import { motion } from 'framer-motion';
-import PlaceholderImage from './PlaceholderImage';
+import { motion, type Variants } from 'framer-motion';
+import Image from 'next/image';
 
 interface FeatureCardProps {
   title: string;
@@ -12,7 +12,7 @@ interface FeatureCardProps {
   className?: string;
   onClick?: () => void;
   isHovered?: boolean;
-  variants?: any;
+  variants?: Variants;
 }
 
 const FeatureCard: FC<FeatureCardProps> = ({
@@ -45,10 +45,12 @@ const FeatureCard: FC<FeatureCardProps> = ({
       {/* Image (if provided) */}
       {image && image !== '' && (
         <div className="mb-4 overflow-hidden rounded-md">
-          <div className="aspect-w-16 aspect-h-9">
-            <img 
+          <div className="relative aspect-video">
+            <Image
               src={image} 
               alt={imageAlt} 
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
               className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
             />
           </div>
@@ -70,7 +72,7 @@ const FeatureCard: FC<FeatureCardProps> = ({
       
       {/* First paragraph (could be a subtitle) */}
       {firstParagraph && (
-        <p className="text-sm text-neutral-800 mb- font-light">
+        <p className="text-sm text-neutral-800 mb-3 font-light">
           {firstParagraph}
         </p>
       )}

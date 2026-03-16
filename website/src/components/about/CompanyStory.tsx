@@ -4,9 +4,7 @@ import { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import Image from 'next/image';
-import Terminal from '../ui/Terminal';
 
 // Register ScrollTrigger plugin
 if (typeof window !== 'undefined') {
@@ -129,7 +127,7 @@ const CompanyStory = () => {
 
             <motion.div variants={itemVariants} className="space-y-2 pb-8">
               <p className="paragraph text-neutral-800">
-                Intrinsic Labs LLC was founded in 2024 with the conviction that serious businesses shouldn't have to jerry rig off-the-shelf solutions that don't fully understand their needs.
+                Intrinsic Labs LLC was founded in 2024 with the conviction that serious businesses shouldn&apos;t have to jerry rig off-the-shelf solutions that don&apos;t fully understand their needs.
               </p>
             </motion.div>
 
@@ -193,7 +191,7 @@ const CompanyStory = () => {
                   <span className="terminal-text-primary text-md tracking-wider">2023</span>
                   <h4 className="text-2xl font-display mt-1 mb-2">Cross Platform</h4>
                   <p className="text-neutral-800 text-md">
-                    Asher learns Android and collaborates with some other developers. Uses his new skills to create an Android-based 43" global missions kiosk for a local church.
+                    Asher learns Android and collaborates with some other developers. Uses his new skills to create an Android-based 43&quot; global missions kiosk for a local church.
                   </p>
                 </div>
                 

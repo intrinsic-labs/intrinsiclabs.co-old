@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import BrowserWindow from '@/components/ui/BrowserWindow';
 import Image from 'next/image';
 // Team member data
@@ -38,7 +37,6 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
-  const [activeTeamMember, setActiveTeamMember] = useState<number>(1); // Default to first team member
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
@@ -143,7 +141,7 @@ const TeamSection = () => {
           <h2 className="heading-lg mb-6 font-display">Meet The Team</h2>
           
           <p className="paragraph text-neutral-800 max-w-2xl mx-auto pb-4">
-            Intrinsic Labs is a small team of developers, business professionals, and creatives. We're dedicated to creating exceptional digital experiences.*
+            Intrinsic Labs is a small team of developers, business professionals, and creatives. We&apos;re dedicated to creating exceptional digital experiences.*
           </p>
           <p className="text-sm italic text-neutral-600 max-w-2xl mx-auto">* said every dev company ever lol. But seriously, we deliver.</p>
         </motion.div>
@@ -158,7 +156,6 @@ const TeamSection = () => {
             tabs={browserTabs} 
             initialTabId={1}
             height={500}
-            onChange={(tabId) => setActiveTeamMember(Number(tabId))}
           />
         </motion.div>
       </div>

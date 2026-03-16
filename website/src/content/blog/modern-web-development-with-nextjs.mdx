@@ -1,0 +1,29 @@
+export const metadata = {
+  title: 'Modern Web Development with Next.js',
+  excerpt: 'How we structure Next.js apps for performance, maintainability, and predictable delivery.',
+  date: '2026-01-20',
+  readingTime: '9 min read',
+  category: 'Web Development',
+  tags: ['Next.js', 'React', 'Architecture', 'Performance'],
+  coverImage: '/images/work/blackthorn.png',
+  featured: false,
+};
+
+# Build for change, not just launch day
+
+Next.js gives you strong defaults, but architecture decisions still decide long-term velocity.
+
+## What we optimize for
+
+1. Small client bundles
+2. Clear server/client boundaries
+3. Predictable data loading paths
+
+```tsx
+export default async function Page() {
+  const data = await getDashboardData();
+  return <Dashboard data={data} />;
+}
+```
+
+When in doubt, push rendering to the server and make client components truly interactive islands.

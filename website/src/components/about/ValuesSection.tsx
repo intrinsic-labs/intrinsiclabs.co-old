@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import FeatureCard from '@/components/ui/FeatureCard';
 
 // Values data

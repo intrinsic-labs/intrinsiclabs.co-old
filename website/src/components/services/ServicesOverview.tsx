@@ -193,7 +193,7 @@ const ServicesOverview = () => {
             transition={{ duration: 0.6 }}
             className="heading-lg mb-6"
           >
-            Let's work together.
+            Let&apos;s work together.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

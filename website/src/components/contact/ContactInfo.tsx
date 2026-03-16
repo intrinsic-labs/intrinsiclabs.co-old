@@ -115,7 +115,7 @@ const ContactInfo = () => {
           <motion.div variants={itemVariants} className="p-4 bg-primary/5 rounded-lg border border-primary/10">
             <h3 className="text-lg font-medium text-primary mb-2">Availability</h3>
             <p className="text-neutral-800">
-              We're currently accepting new projects for Q2-3 2025. Get in touch early to secure your spot in our development schedule.
+              We&apos;re currently accepting new projects for Q2-3 2025. Get in touch early to secure your spot in our development schedule.
             </p>
           </motion.div>
         </motion.div>

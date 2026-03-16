@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 const CallToAction = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
   
   // Parallax scroll effect
   const { scrollYProgress } = useScroll({
@@ -14,13 +13,7 @@ const CallToAction = () => {
     offset: ["start end", "end start"]
   });
   
-  // Make parallax more pronounced
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 50]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0.5]);
-  
-  // Add rotation for more dynamic effect
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 1.5]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.02, 1]);
 
   return (
@@ -60,8 +53,8 @@ const CallToAction = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-neutral-800 mb-10 max-w-3xl mx-auto"
           >
-            Whether you're looking to build a new mobile app, create a web
-            application, or develop custom software, we're here to help you
+            Whether you&apos;re looking to build a new mobile app, create a web
+            application, or develop custom software, we&apos;re here to help you
             achieve your goals.
           </motion.p>
 

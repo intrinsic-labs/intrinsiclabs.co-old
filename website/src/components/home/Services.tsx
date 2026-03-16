@@ -82,7 +82,6 @@ const services = [
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
   
   // Parallax scroll effect
   const { scrollYProgress } = useScroll({
@@ -90,13 +89,7 @@ const Services = () => {
     offset: ["start end", "end start"]
   });
   
-  // Make parallax more pronounced
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, -120]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 60]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
-  
-  // Add rotation for more dynamic effect
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -2]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.03, 1]);
 
   // Animation variants

@@ -24,27 +24,11 @@ const Card = ({
 }: CardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [isMounted, setIsMounted] = useState(false);
 
   // Set mounted state after component mounts
   useEffect(() => {
     setIsMounted(true);
-    
-    if (cardRef.current) {
-      const { width, height } = cardRef.current.getBoundingClientRect();
-      setDimensions({ width, height });
-    }
-    
-    const handleResize = () => {
-      if (cardRef.current) {
-        const { width, height } = cardRef.current.getBoundingClientRect();
-        setDimensions({ width, height });
-      }
-    };
-    
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   // Handle mouse move to update gradient position
