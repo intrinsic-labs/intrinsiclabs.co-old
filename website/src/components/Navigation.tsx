@@ -48,6 +48,7 @@ const Navigation = () => {
 
   const navLinks = [
     { name: 'Services', href: '/services' },
+    { name: 'Work', href: '/work' },
     { name: 'About', href: '/about' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
